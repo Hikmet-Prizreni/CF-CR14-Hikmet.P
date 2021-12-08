@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+
+header {
+    background-image: url("../pictures/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titel {
+    height: 40vh;
+    font-family: 'Courgette', cursive;  
+    text-shadow: 7px 1px 9px #FFB247;
+    -webkit-text-stroke: 0.5px #FFB247;
+}
+
+nav {
+    font-family: 'Francois One', sans-serif;
+    text-shadow: 7px 1px 9px #white;
+    -webkit-text-stroke: 0.5px #black;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pic {
+    height: 35vh;
+}
+.mapp {
+    height: 40vh;
+}

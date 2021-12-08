@@ -5,11 +5,14 @@ require_once 'file_upload.php';
 if ($_POST) {   
     $name = $_POST['name'];
     $price = $_POST['price'];
+    $description = $_POST['description'];
+    $lat = $_POST['lat'];
+    $lng = $_POST['lng'];
     $uploadError = '';
     //this function exists in the service file upload.
     $picture = file_upload($_FILES['picture']);  
    
-    $sql = "INSERT INTO products (name, price, picture) VALUES ('$name', $price, '$picture->fileName')";
+    $sql = "INSERT INTO trips (name, price, description, lat, lng, picture) VALUES ('$name', $price, '$description', $lat, $lng, '$picture->fileName')";
 
     if (mysqli_query($connect, $sql) === true) {
         $class = "success";
